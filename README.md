@@ -4,7 +4,7 @@ This repository is a **web-based application** tailored for members of the “La
 
 ## Getting Started: Key Points
 - **Technical coverage**:
--- **Backend architecture**: Describes the server-side infrastructure, outlining how data is managed and accessed through APIs
+-- **Backend architecture**: Describes the server-side infrastructure, outlining how data is managed and accessed through APIs.
 -- **Frontend Structure**: Details the client-side implementation, including user interfaces and interactions design.
 
 
