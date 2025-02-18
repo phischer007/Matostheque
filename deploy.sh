@@ -1,23 +1,24 @@
 #!/bin/bash
 
 # Navigate to your Django project directory
-cd /home/nomena/Matostheque_App/
+# Change "user_name" to the account on your computer!!!
+cd /home/user_name/Matostheque_App/
 
 # Install/update project dependencies (if needed)
-# pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Perform database migrations
-# python3 manage.py makemigrations
+python3 manage.py makemigrations
 
 # Apply database migrations
-# python3 manage.py migrate Matostheque
+python3 manage.py migrate Matostheque
 
 # Need to find another way for when the folder is too big
 # Move the images directory outside of the static files directory
-mv assets/images /home/nomena/matostheque_images_backup
+mv assets/images /home/user_name/matostheque_images_backup
 
-# Change ownership to sginfo
-sudo chown -R nomena:nomena /home/nomena/Matostheque_App/assets
+# Change ownership
+sudo chown -R user_name:user_name /home/user_name/Matostheque_App/assets
 
 # Set permissions to ensure that the assets folder and its contents can be deleted
 chmod -R u+w assets
@@ -26,7 +27,7 @@ chmod -R u+w assets
 python3 manage.py collectstatic --noinput --clear 
 
 # Move the images directory back to its original location
-mv /home/nomena/matostheque_images_backup assets/images
+mv /home/user_name/matostheque_images_backup assets/images
 
 # Set the DJANGO_ENV environment variable
 export DJANGO_ENV=production
@@ -35,7 +36,7 @@ export DJANGO_ENV=production
 # gunicorn -c gunicorn_config.py MatosthequeRestApis.wsgi &
 
 # Navigate to the front-end directory
-cd /home/nomena/Matostheque_App/fronttheque/
+cd /home/user_name/Matostheque_App/fronttheque/
 
 # Install front-end dependencies (if needed)
 # npm install
@@ -47,6 +48,5 @@ export NODE_ENV=production
 npm run build
 
 # Start the front-end server
-# npm run start
-
+# The "&" symbol execute the command in the background in a subshell
 npm run start &
