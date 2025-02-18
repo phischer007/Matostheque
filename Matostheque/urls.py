@@ -25,6 +25,7 @@ urlpatterns = [
     path('owners/', owner_views.owner_list),#get a list of all owners
     path('owners/<int:pk>/', owner_views.owner_detail),#get  information about one specific owner
     path('active_owners/lite/', owner_views.active_owners_lite),#get a lite  version of the owner list
+
     path('loans/', loan_views.loan_list),#get a list of all loans
     path('loans/details/', loan_views.detailed_loans),#get a full indepth view of all loans
     path('loans/details/<int:pk>/', loan_views.inDepth_detail_loan, {'isSingleRow': True}),#get a full indepth view of all loans
@@ -34,12 +35,15 @@ urlpatterns = [
     path('loans/on/<str:s>/', loan_views.loan_activated),#get a list of all loan currently active
     path('loans/overdue/', loan_views.loan_overdue),#get a list of all overdue materials
     path('loans/latest/<int:pk>/', loan_views.latest_loan),#get the latest loan of a user
+
     path('users/', user_views.user_list),#get a list of all users
     path('users/<int:pk>/', user_views.user_detail),#get, update and delete user info
     path('users/upload_pictures/<int:pk>/', user_views.upload_profile_pic),#upload and override profile pictures
+
     path('notifications/', notification_views.notification_operations),#get a list of all notifications for now
     path('notifications/<int:pk>/', notification_views.user_notification_list),#get a list of all notifications for now
     path('notifications/important/<int:pk>/', notification_views.user_important_notification_list),#get a list of all notifications for now
+    
     path('comments/', comment_views.comments_operations),#fetching or creating new comments
     path('comments/detailed/', comment_views.get_formatted_comments),#fetching or creating new comments
     path('comments/<int:pk>/', comment_views.single_comment_operations),#updating or deleting comments
