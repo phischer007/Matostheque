@@ -40,7 +40,7 @@ const Page = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const user = useAuth().user;
-  const btnCreateUrl = user.is_staff ? "settings" : "/create/create-material"; //coming soon super user
+  const btnCreateUrl = user.is_staff ? "settings" : "/create/create-material";
 
   useEffect(() => {
     let loanApiUrl = `${config.apiUrl}/loans/details/owner/${user.owner_id}/`;
