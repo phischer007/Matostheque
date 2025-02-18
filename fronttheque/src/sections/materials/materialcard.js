@@ -6,19 +6,10 @@ import NextLink from 'next/link';
 
 export const MaterialsCard = (props) => {
   const { material } = props;
-{/*
-  sortedMaterial = material.sort((a, b) =>
-    a.material_title.localeCompare(b.material_title)
-  );
-
-  console.log(sortedMaterial);
-*/}
 
   const images = JSON.parse(material.images);
-  // const images = JSON.parse(sortedMaterial.images);
 
   let profil_image = JSON.parse(material.owner_profil);
-  // let profil_image = JSON.parse(sortedMaterial.owner_profil);
 
   const profil_path = profil_image ? `${process.env.NEXT_PUBLIC_ASSETS}/${profil_image[0]}` : '';
   const image_path = images ? `${process.env.NEXT_PUBLIC_ASSETS}/${images[0]}` : '';
@@ -83,14 +74,12 @@ export const MaterialsCard = (props) => {
             variant="h5"
           >
             {material.material_title}
-            {/* {sortedMaterial.material_title} */}
           </Typography>
           <Typography
             align="center"
             variant="body1"
           >
             {material.description}
-            {/* {sortedMaterial.description} */}
           </Typography>
         </Link>
       </CardContent>
@@ -120,7 +109,6 @@ export const MaterialsCard = (props) => {
             variant="body2"
           >
             Owner: {material.owner_first_name} {material.owner_last_name}
-            {/* Owner: {sortedMaterial.owner_first_name} {sortedMaterial.owner_last_name} */}
           </Typography>
         </Stack>
         <Stack
@@ -140,7 +128,6 @@ export const MaterialsCard = (props) => {
             variant="body2"
           >
             {material.loan_duration} Days
-            {/* {sortedMaterial.loan_duration} Days */}
           </Typography>
         </Stack>
       </Stack>
