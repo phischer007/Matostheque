@@ -10,9 +10,6 @@ export const MaterialTable = (props) => {
   const user = useAuth().user;
   const { data } = props;
 
-  // Sort data by material_title in ascending order
-  // const sortedData = data ? [...data].sort((a, b) => a.material_title.localeCompare(b.material_title)) : [];
-  // Sort the data by material_title in ascending order
   const sortedData = data ? [...data].sort((a, b) => {
     return a.material_title.localeCompare(b.material_title);
   }) : [];
@@ -26,11 +23,6 @@ export const MaterialTable = (props) => {
       gridTemplateColumns: { xs: '1fr', sm: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }, // One column for xs and sm, two columns for md, and three columns for lg and above
       gap: '16px'
     }}>
-      {/* {data && data.map((material, index) => {
-        const hasDivider = index < data.length - 1;
-        const images = JSON.parse(material.images);
-        const image_path = images ? `${process.env.NEXT_PUBLIC_ASSETS}/${images[0]}` : ''; */}
-
       {sortedData && sortedData.map((material, index) => {
         const hasDivider = index < sortedData.length - 1;
         const images = JSON.parse(material.images);
