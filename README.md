@@ -15,7 +15,8 @@ Clone this repository locally:
 
 `git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
 
-**Technology Stack**
+
+## Technology Stack
 
 - **Database** : PostgreSQL database was selected for this project together with psycopg2, the PostgreSQL adapter for Python, using pip. It is a relational database management system (RDBMS). It provides robust features for managing structured data, ensuring data integrity, and supporting complex queries.
 - **Node.js**: Serves as the runtime environment for executing JavaScript on the server side.
