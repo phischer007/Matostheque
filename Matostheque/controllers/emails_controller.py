@@ -48,21 +48,6 @@ def send_validation_email(loan):
     send_mail(subject, plain_message, from_email, [to_email], html_message=html_message)
 
 
-    # if loan.loan_date - datetime.now().date() <= timedelta(days=1):
-        # html_message = render_to_string('emails/loanvalidation_email.html', context)
-        # plain_message = strip_tags(html_message)
-        
-        # Send the email
-        # subject = 'New Request Matostheque'
-        # from_email = settings.EMAIL_HOST_USER
-        # to_email = loan.material.owner.user.email
-        
-        # email = send_mail(subject, plain_message, from_email, [to_email], html_message=html_message)
-        # email.send() 
-
-
-
-
 # Function to send an email of reminder for return to the borrower of the equipment
 def send_reminder_email(loan):
     context = {
