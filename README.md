@@ -12,6 +12,7 @@ Its primary goal is to streamline the management and accessibility of laboratory
 - **Frontend Structure**: Details the client-side implementation, including user interfaces and interactions design (i.e.; fronttheque folder -- contains Next.js and React.js codes).
 
 Clone this repository locally:
+
 `git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
 
 **Technology Stack**
