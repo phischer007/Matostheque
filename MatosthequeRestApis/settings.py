@@ -34,8 +34,8 @@ INTERNAL_IPS = [
     '152.77.203.57',
 ]
 
-ALLOWED_HOSTS = ['liphy-annuaire.univ-grenoble-alpes.fr', 'localhost']
-# ALLOWED_HOSTS = ['liphy-annuaire.univ-grenoble-alpes.fr', 'localhost', '*']
+ALLOWED_HOSTS = ['matostheque_server_name.fr', 'localhost']
+# ALLOWED_HOSTS = ['matostheque_server_name.fr', 'localhost', '*']
 
 MIGRATION_MODULES = {
     'Matostheque' : 'Matostheque.migrations'
@@ -78,14 +78,14 @@ USE_TZ = True
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOWED_ORIGINS = [
-    "https://liphy-annuaire.univ-grenoble-alpes.fr",
-    'https://authentification.univ-grenoble-alpes.fr'
+    "https://matostheque_server_name.fr",
+    'https://authentification.univ-grenoble-alpes.fr' # Using the UGA central authentification service
 ]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',  # Debugger
     'http://localhost:3000',  # Frontend
     # 'http://localhost:3001',  # Frontend
-    'https://liphy-annuaire.univ-grenoble-alpes.fr',  # Production domain
+    'https://matostheque_server_name.fr',  # Production domain name
     'https://authentification.univ-grenoble-alpes.fr',  # CAS authentication
 )
 CORS_ALLOW_METHODS = [
@@ -114,30 +114,6 @@ ROOT_URLCONF = 'MatosthequeRestApis.urls'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Check if DJANGO_ENV environment variable is set to 'production'
-#Really to come by because this not working for real
-# if os.environ.get('DJANGO_ENV') == 'production':
-#     # SMTP configuration for a remote server
-#     EMAIL_HOST = 'mailhost.u-ga.fr'  # Your SMTP server address
-#     EMAIL_PORT = 25  # Port for SMTP server (587 for TLS, 465 for SSL)
-#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # Your email address
-#     #EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # Your email password
-#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')  # Set default from email address
-#     EMAIL_USE_TLS = False  # Disable TLS
-#     EMAIL_USE_SSL = False  # Enable SSL
-# else:
-    # Default SMTP configuration for testing locally
-
-#####################################################################################################
-#### Configuration for UGA EMAIL SMTP settings
-#### Author: Vikhram
-#####################################################################################################
-# EMAIL_HOST = os.environ.get('EMAIL_HOST')
-# EMAIL_USE_TLS = False
-# EMAIL_USE_SSL = True
-# EMAIL_HOST = 25
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-# DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 EMAIL_USE_TLS = False
@@ -224,11 +200,6 @@ USE_L10N = True
     # ('en', _('English')),
     # ('fr', _('French')),
 # ]
-
-# LOCALE_PATHS = [
-     # BASE_DIR / 'locale/',
-# ]
-#########################################################
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
