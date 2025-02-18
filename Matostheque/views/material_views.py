@@ -22,7 +22,6 @@ from Matostheque.controllers.materials_controller import *
 @api_view(['GET'])
 def get_materials(request):
     materials = Materials.objects.all()
-    # materials = Materials.objects.all().order_by('material_title') # Sort by 'material_title' in ascending order
     
     selected_loans = materials.values(
         'material_id',
