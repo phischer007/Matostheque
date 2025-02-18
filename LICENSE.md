@@ -4,10 +4,10 @@ Custom Proprietary Software License
 Copyright (c) 2021 Devias
 
 # Frontend Modifications:
-Copyright (c) 2024 Nomena I.S. RANDRIANIAINA 
+Copyright (c) 2024 Nomena I.S. RANDRIANIAINA and Laboratoire interdisciplinaire de physique
 
 # Backend Original Work (including the folders Matostheque and MatosthequeRestApis)
-Copyright (c) 2024 Nomena I.S. RANDRIANIAINA 
+Copyright (c) 2024 Nomena I.S. RANDRIANIAINA and Laboratoire interdisciplinaire de physique
 
 This Custom Proprietary Software License Agreement is entered into by and between 
 Nomena I.S. RANDRIANIAINA ("Licensor") and the "laboratoire interdisciplinaire de Physique" 
@@ -40,6 +40,4 @@ whether oral or written.
 
 For any inquiries or further information regarding this Agreement or the Software, 
 please contact Licensor at 
-# nomena.randrianiaina@etu.univ-grenoble-alpes.fr 
-or at 
-# ikoriantsouh11@gmail.com.
+# nomena.randrianiaina@etu.univ-grenoble-alpes.fr; ikoriantsouh11@gmail.com; liphy-direction@univ-grenoble-alpes.fr
