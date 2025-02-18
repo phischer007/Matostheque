@@ -23,8 +23,8 @@ Clone this repository locally:
 - **Node Package Manager**: npm manages dependencies and facilitates the integration of various libraries and tools into our project.
 - **Next.js**: A popular framework for [React](https://fr.react.dev/) applications that enables server-side rendering (SSR) and efficient client-side routing. It provides optimized performance and Search Engine optimization (SEO) benefits by pre-rendering pages.
 - **Django**: a high-level Python web framework that encourages rapid development and clean, pragmatic design. It powers the server-side of the application, handling business logic, data persistence with PostgreSQL, and serving APIs.
-- **Gunicorn**: Gunicorn is a Python WSGI HTTP Server for UNIX. It serves as a Python web application server, handling requests from clients and passing them to Django for processing. Gunicorn ensures efficient handling of concurrent requests.
+- **Gunicorn**: A Python WSGI HTTP Server for UNIX. It serves as a Python web application server, handling requests from clients and passing them to Django for processing. Gunicorn ensures efficient handling of concurrent requests.
 - **Nginx**: Nginx is used as a reverse proxy server, load balancer, and HTTP cache. It enhances the application's performance by serving static files, handling SSL/TLS termination, and routing requests to Gunicorn.
-- **Maildev**: Maildev is a simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
+- **Maildev**: A simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
 
 
