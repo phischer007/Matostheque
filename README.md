@@ -6,8 +6,8 @@ This repository is a **web-based application** tailored for members of the “La
 **Key Points**
 
 **Technical coverage**:
-- **Backend architecture**: Describes the server-side infrastructure, outlining how data is managed and accessed through APIs.
-- **Frontend Structure**: Details the client-side implementation, including user interfaces and interactions design.
+- **Backend architecture**: Describes the server-side infrastructure, outlining how data is managed and accessed through APIs (i.e.; Matostheque folder).
+- **Frontend Structure**: Details the client-side implementation, including user interfaces and interactions design (i.e.; fronttheque folder -- contains Next.js and React.js codes).
 
 **Technology Stack**
 
