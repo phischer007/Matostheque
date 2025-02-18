@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the fronttheque directory
-# cd /home/nomena/Matostheque_App/fronttheque/
+# cd /home/user_name/Matostheque_App/fronttheque/
 
 # Set NODE_ENV to production
 export NODE_ENV=production
