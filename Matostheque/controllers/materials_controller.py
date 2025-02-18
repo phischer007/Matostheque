@@ -32,10 +32,9 @@ def generate_qrcode(device_id, device_name, team):
     """
 
     # Create a link to a web page with the material details
-    webpage_link = f"https://liphy-annuaire.univ-grenoble-alpes.fr/matostheque/public/{device_id}"
+    webpage_link = f"https://matostheque_server_name.fr/matostheque/public/{device_id}"
 
     # Generate the qrcode with the link
-    # qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=14)
     qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=20, border=14)
     qr.add_data(webpage_link)  
     qr.make(fit=True)
@@ -47,19 +46,6 @@ def generate_qrcode(device_id, device_name, team):
     qr_img_bytes = io.BytesIO()
     qr_img.save(qr_img_bytes, format='PNG')
     qr_img_bytes.seek(0)
-
-    # If you want to save the image to a file as well
-    #timestr = datetime.now().strftime("%Y%m%d%H%M%S") 
-    #qr_img.save(f'generate_image_{timestr}.png')
-
-    # Create an A4 paper image
-    #a4_width, a4_height = 2480, 3508
-    #a4_image = Image.new('RGB', (a4_width, a4_height), 'white')
-    # Calculate position to center  the QR code
-    #qr_width, qr_height = qr_img.size
-    #position = ((a4_width - qr_width) // 2, (a4_height - qr_height) // 2)
-    # Paste the QR code onto the A4 image
-    #a4_image.paste(qr_img, position)
 
     return qr_img_bytes
 
