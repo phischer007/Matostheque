@@ -40,4 +40,4 @@ whether oral or written.
 
 For any inquiries or further information regarding this Agreement or the Software, 
 please contact Licensor and Licensee at 
-**nomena.randrianiaina@etu.univ-grenoble-alpes.fr**; **ikoriantsouh11@gmail.co**m; **liphy-direction@univ-grenoble-alpes.fr**
+**nomena.randrianiaina@etu.univ-grenoble-alpes.fr**; **ikoriantsouh11@gmail.com**; **liphy-direction@univ-grenoble-alpes.fr**
