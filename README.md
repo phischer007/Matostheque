@@ -1,0 +1,2 @@
+**Matostheque**
+Matostheque is a web-based application tailored for members of the “Laboratoire Interdisciplinaire de Physique” at Université Grenoble Alpes. This system serves as a virtual material library, facilitating the sharing, lending, and borrowing of materials among users. Its primary goal is to streamline the management and accessibility of laboratory resources within the research community.
