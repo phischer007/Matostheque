@@ -6,9 +6,9 @@ workers = multiprocessing.cpu_count() * 2 + 1
 threads = multiprocessing.cpu_count() * 2
 timeout = 60
 
-#logging
-accesslog = '/home/nomena/Matostheque_App/logs/access.log'
-errorlog = '/home/nomena/Matostheque_App/logs/error.log'
+# logging
+accesslog = '/home/user_name/Matostheque_App/logs/access.log'
+errorlog = '/home/user_name/Matostheque_App/logs/error.log'
 
 loglevel = 'debug' # most types of information 
 capture_output = True
