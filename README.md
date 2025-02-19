@@ -16,7 +16,7 @@ Clone this repository locally:
 `git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
 
 ## Documentation
-See [Documentation Index](https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque/-/blob/main/doc/documentation.md)
+See [Documentation Index](https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque/-/blob/main/doc/README.md)
 
 
 
