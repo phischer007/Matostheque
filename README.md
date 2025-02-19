@@ -27,4 +27,6 @@ Clone this repository locally:
 - **Nginx**: Nginx is used as a reverse proxy server, load balancer, and HTTP cache. It enhances the application's performance by serving static files, handling SSL/TLS termination, and routing requests to Gunicorn.
 - **Maildev**: A simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
 
+## Documentation
+See [Documentation Index]()
 
