@@ -31,7 +31,7 @@ DEBUG = False
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 INTERNAL_IPS = [
-    '152.77.203.57',
+    '192.168.0.1', # change this IP address to the IP of your local machine
 ]
 
 ALLOWED_HOSTS = ['matostheque_server_name.fr', 'localhost']
