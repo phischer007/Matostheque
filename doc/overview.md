@@ -11,4 +11,4 @@
 - **Maildev** : A simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
 
 ## Database design
-![Matostheque](./matosthequeDB.png)
+![](matosthequeDB.png)
