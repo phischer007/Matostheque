@@ -163,7 +163,7 @@ AUTHENTICATION_BACKENDS = [
     'django_cas_ng.backends.CASBackend', # CAS authentication backend
 ]
 
-CAS_SERVER_URL = 'https://authentification.univ-grenoble-alpes.fr'
+CAS_SERVER_URL = 'https://your_authentication_server_name.fr'
 CAS_VERSION = '3'
 CAS_ADMIN_REDIRECT = False
 LOGIN_URL = '{}/cas/login?service={{}}'.format(CAS_SERVER_URL)
