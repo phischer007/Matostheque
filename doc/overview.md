@@ -9,3 +9,7 @@
 - **Gunicorn** : A Python WSGI HTTP Server for UNIX. It serves as a Python web application server, handling requests from clients and passing them to Django for processing. Gunicorn ensures efficient handling of concurrent requests.
 - **Nginx** : Nginx is used as a reverse proxy server, load balancer, and HTTP cache. It enhances the application's performance by serving static files, handling SSL/TLS termination, and routing requests to Gunicorn.
 - **Maildev** : A simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
+
+## Database design
+![Inline image](MatosthequeDB.png)
+[Image to be downloaded](MatosthequeDB.png)
