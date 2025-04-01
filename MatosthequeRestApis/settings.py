@@ -79,14 +79,14 @@ USE_TZ = True
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOWED_ORIGINS = [
     "https://matostheque_server_name.fr",
-    'https://authentification.univ-grenoble-alpes.fr' # Using the UGA central authentification service
+    'https://your_authentication_server_name.fr' # In our case, we are using the Univesité Grenoble Alpes central authentification service
 ]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',  # Debugger
     'http://localhost:3000',  # Frontend
     # 'http://localhost:3001',  # Frontend
     'https://matostheque_server_name.fr',  # Production domain name
-    'https://authentification.univ-grenoble-alpes.fr',  # CAS authentication
+    'https://your_authentication_server_name.fr',  # CAS authentication
 )
 CORS_ALLOW_METHODS = [
     'GET',
