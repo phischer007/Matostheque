@@ -11,4 +11,11 @@
 - **Maildev** : A simple email server for development purposes. It allows us to test email functionalities locally without sending emails to real addresses, facilitating email integration and debugging during development.
 
 ## Database design
-![](matosthequeDB.png)
+![Image of the database](matosthequeDB.png)
+
+## Front-end API structure
+- **Models** : Contains the database models representing the data structures.
+- **Views** : Contains the view functionalities that handles incoming HTTP requests and return respones.
+- **Controller** : Contains utility functions used across different views and components of the server.
+- **Serializer.py** : Aids in converting complex data types (for example: querysets) to native Python datatypes that can be easily rendered into JSON file.
+- **url.py** : Defines the URL patterns that route requests to the appropriate views.
