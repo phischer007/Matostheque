@@ -11,13 +11,10 @@ Its primary goal is to streamline the management and accessibility of laboratory
 - **Backend architecture**: Describes the server-side infrastructure, outlining how data is managed and accessed through APIs (i.e.; Matostheque folder).
 - **Frontend Structure**: Details the client-side implementation, including user interfaces and interactions design (i.e.; fronttheque folder -- contains Next.js and React.js codes).
 
-Clone this repository locally:
-
-`git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
-
 ## Quick start
 - Clone this repository locally
-`git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
+``git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git``
+
 
 **File Structure**
 
