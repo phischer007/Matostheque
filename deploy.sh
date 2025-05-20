@@ -33,13 +33,13 @@ mv /home/user_name/matostheque_images_backup assets/images
 export DJANGO_ENV=production
 
 # Start the Django application using Gunicorn
-# gunicorn -c gunicorn_config.py MatosthequeRestApis.wsgi &
+gunicorn -c gunicorn_config.py MatosthequeRestApis.wsgi &
 
 # Navigate to the front-end directory
 cd /home/user_name/Matostheque_App/fronttheque/
 
 # Install front-end dependencies (if needed)
-# npm install
+npm install
 
 # Set NODE_ENV to production
 export NODE_ENV=production
