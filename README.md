@@ -13,9 +13,10 @@ Its primary goal is to streamline the management and accessibility of laboratory
 
 ## Quick start
 - Clone this repository locally ``git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git``
-- Install the packages `requirements.txt`
+- Make sure your Node.js and npm versions are up to date.
+- Install the packages in `requirements.txt`.
+- Go to the fronttheque directory and install dependencies `npm install`. NB : Refer to the file **deploy.sh** for further information.
 
-> requirements.txt
 
 **File Structure**
 
