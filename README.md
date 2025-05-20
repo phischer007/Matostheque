@@ -14,6 +14,9 @@ Its primary goal is to streamline the management and accessibility of laboratory
 ## Quick start
 - Clone this repository locally
 ``git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git``
+- Install the packages
+
+`requirements.txt`
 
 
 **File Structure**
