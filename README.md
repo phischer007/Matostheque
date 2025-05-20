@@ -15,6 +15,10 @@ Clone this repository locally:
 
 `git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git`
 
+## File Structure
+Within the download file, you would find the following directories and files :
+
+
 ## Documentation
 See [Documentation Index](https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque/-/blob/main/doc/README.md)
 
