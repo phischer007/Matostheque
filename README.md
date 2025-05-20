@@ -18,7 +18,7 @@ Its primary goal is to streamline the management and accessibility of laboratory
 - Go to the fronttheque directory and install dependencies `npm install`. NB : Refer to the file **deploy.sh** for further information.
 
 
-**File Structure**
+## File Structure
 
 Within the download file, you would find the following directories and files :
 
