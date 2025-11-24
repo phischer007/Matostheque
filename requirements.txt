@@ -10,7 +10,7 @@ click-repl==0.3.0
 colorama==0.4.6
 cron-descriptor==1.4.3
 dataclass-wizard==0.22.3
-Django==5.0.3
+Django
 django-cors-headers==4.3.1
 django-debug-toolbar==4.3.0
 django-timezone-field==6.1.0
