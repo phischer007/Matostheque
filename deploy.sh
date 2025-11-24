@@ -13,10 +13,6 @@ python3 manage.py makemigrations
 # Apply database migrations
 python3 manage.py migrate Matostheque
 
-# Need to find another way for when the folder is too big
-# Move the images directory outside of the static files directory
-mv assets/images /home/user_name/matostheque_images_backup
-
 # Change ownership
 sudo chown -R user_name:user_name /home/user_name/Matostheque_App/assets
 
@@ -25,9 +21,6 @@ chmod -R u+w assets
 
 # Collect static files (if needed)
 python3 manage.py collectstatic --noinput --clear 
-
-# Move the images directory back to its original location
-mv /home/user_name/matostheque_images_backup assets/images
 
 # Set the DJANGO_ENV environment variable
 export DJANGO_ENV=production
