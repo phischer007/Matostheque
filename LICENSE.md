@@ -1,6 +1,6 @@
 # Custom Proprietary Software License
 
-# Frontend Original Work (in folder fronttheque):
+## Frontend Original Work (in folder fronttheque):
 Copyright (c) 2021 Devias
 
 # Backend and Frontend Original Work
