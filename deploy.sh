@@ -7,7 +7,7 @@
 ### Change "user_name" to the user account on your machine !!!
 ##################################################################################################
 cd ~
-git clone https://gricad-gitlab.univ-grenoble-alpes.fr/duffouvi/matostheque.git Matostheque_App
+git clone https://github.com/phischer007/Matostheque.git Matostheque_App
 cd /home/user_name/Matostheque_App/
 
 ##################################################################################################
@@ -59,8 +59,6 @@ psql -h localhost -U your_database_username -d matostheque
 \l  
 ## OR
 SELECT datname FROM pg_database;
-# List of relations
-\dt 
 
 # Exit psql
 \q
